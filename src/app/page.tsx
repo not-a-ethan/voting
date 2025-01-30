@@ -10,6 +10,8 @@ export default async function Page() {
 
     const body = JSON.parse(await response.json());
 
+    console.log(body)
+
     return (
         <div>
             <h1>What is better? Hotdogs or Hamburgers</h1>

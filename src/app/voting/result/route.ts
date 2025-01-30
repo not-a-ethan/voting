@@ -13,13 +13,13 @@ export async function GET(req: NextRequest, res: NextResponse) {
     if (hotdog.length === 0 || total['count'] === 0) {
         hotdogPercent = 0
     } else {
-        hotdogPercent = (hotdog.length / total[0]['total']) * 100
+        hotdogPercent = (hotdog.length / total[0]['count']) * 100
     }
 
     if (hamburger.length === 0  || total['count'] === 0) {
         hamburgerPercent = 0;
     } else {
-        hamburgerPercent = (hamburger.length / total[0]['total']) * 100
+        hamburgerPercent = (hamburger.length / total[0]['count']) * 100
     }
 
     return NextResponse.json(
