@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 import sql from "../postgres";
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
     const body = await req.json();
     const vote = body.vote;
 

@@ -21,15 +21,6 @@ export default async function Page() {
 
             <p>Hambuger votes: {ham} &#40;{hamPercent}&#41;</p>
             <p>Hotdog votes: {hot} &#40;{hotPercent}%&#41;</p>
-
-            <canvas id="myChart"></canvas>
-
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script>
-                const thing = document.getElementById("myChart");
-                
-                new Chart(thing)
-            </script>
         </div>
     )
 }
