@@ -1,5 +1,7 @@
 import postgres from 'postgres'
 
-const sql = postgres(process.env.url, {})
+const url = process.env.url || "";
+
+const sql = postgres(url, {})
 
 export default sql
